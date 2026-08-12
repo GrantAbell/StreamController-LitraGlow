@@ -1,0 +1,9 @@
+# Intentionally empty.
+#
+# The device layer talks to /dev/hidraw directly through the standard library
+# (os, select), so the plugin needs no third-party packages. This was a
+# deliberate choice: the StreamController Flatpak runtime ships no HIDAPI
+# binding, and a dependency-free transport is the only version that was proven
+# to work inside it.
+#
+# Pillow is used for key rendering and is already provided by StreamController.

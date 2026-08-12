@@ -1,0 +1,25 @@
+{
+    "id": "com_grant_LitraGlow",
+    "name": "Litra Glow",
+    "version": "1.0.0",
+    "author": "grant",
+    "github": "https://github.com/GrantAbell/StreamController-LitraGlow",
+    "thumbnail": "store/thumbnail.png",
+    "descriptions": {
+        "en_US": "Control one or more Logitech Litra Glow lights over USB: power, brightness and colour temperature, on both Stream Deck keys and Stream Deck+ dials."
+    },
+    "short-descriptions": {
+        "en_US": "Control Logitech Litra Glow lights."
+    },
+    "tags": [
+        "light",
+        "litra",
+        "logitech",
+        "streaming",
+        "usb"
+    ],
+    "minimum-app-version": "1.5.0-beta.8",
+    "app-version": "1.5.0-beta.15",
+    "description": "Control one or more Logitech Litra Glow lights over USB: power, brightness and colour temperature, on both Stream Deck keys and Stream Deck+ dials.",
+    "short-description": "Control Logitech Litra Glow lights."
+}

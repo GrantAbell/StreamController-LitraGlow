@@ -1,0 +1,23 @@
+{
+    "generic": {
+        "name": "Litra Glow plugin",
+        "author": "grant",
+        "license": "GPL-3.0-or-later",
+        "license-url": "https://www.gnu.org/licenses/gpl-3.0.html",
+        "comment": "Plugin code, icons and rendered key images are original work."
+    },
+    "protocol": {
+        "name": "Litra HID++ protocol details",
+        "author": "Community reverse-engineering of the Logitech HID++ Litra feature",
+        "license": "N/A",
+        "license-url": "",
+        "comment": "The HID++ feature layout used here (feature index 0x04, function nibbles for power, brightness and temperature) is publicly documented by community Litra implementations. Every command and response in this plugin was independently verified against a physical Litra Glow with probe_litra.py."
+    },
+    "fonts": {
+        "name": "DejaVu Sans",
+        "author": "DejaVu fonts project",
+        "license": "DejaVu Fonts License (Bitstream Vera derived)",
+        "license-url": "https://dejavu-fonts.github.io/License.html",
+        "comment": "Loaded from the host/runtime font path for key rendering; not bundled with this plugin."
+    }
+}

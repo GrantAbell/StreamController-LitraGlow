@@ -1,0 +1,7 @@
+{
+    "plugin.name": "Litra Glow",
+
+    "actions.power.name": "Litra Glow: Power",
+    "actions.brightness.name": "Litra Glow: Brightness",
+    "actions.temperature.name": "Litra Glow: Color Temperature"
+}

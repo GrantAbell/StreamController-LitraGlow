@@ -1,0 +1,27 @@
+# Logitech Litra Glow — grant hidraw access to the logged-in local user.
+#
+# StreamController must never need to run as root.
+#
+# TAG+="uaccess" hands access to whoever is physically logged in, via systemd's
+# ACL mechanism, instead of granting every account on the machine read/write
+# access to the device the way MODE="0666" would.
+#
+# Install:
+#   sudo cp 99-litra-glow.rules /etc/udev/rules.d/
+#   sudo udevadm control --reload-rules
+#   sudo udevadm trigger --subsystem-match=hidraw
+# then unplug and replug the light.
+#
+# Verify (the node varies):
+#   getfacl -p /dev/hidraw14
+# You should see a "user:<you>:rw-" entry.
+#
+# Note: on distributions that already ship a uaccess rule matching Logitech
+# devices, or that assign the Litra to a group your user is in, this file may be
+# unnecessary — check with the getfacl command above before installing it.
+
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c900", TAG+="uaccess"
+
+# Some setups match on the USB device rather than the HID interface; harmless if
+# it does not match.
+SUBSYSTEM=="usb", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="c900", TAG+="uaccess"

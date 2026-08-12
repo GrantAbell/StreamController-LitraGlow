@@ -1,0 +1,13 @@
+{
+    "name": "Litra Glow",
+    "version": "1.0.0",
+    "author": "grant",
+    "license": "GPL-3.0-or-later",
+    "repository": "https://github.com/GrantAbell/StreamController-LitraGlow",
+    "summary": "Control Logitech Litra Glow lights from StreamController.",
+    "description": "Adds Power, Brightness and Colour Temperature actions for one or more USB-connected Logitech Litra Glow lights. Works on Stream Deck keys and Stream Deck+ dials, targets lights by serial number, supports an 'all connected lights' target, reflects changes made with the light's own buttons, and recovers automatically from unplug and replug.",
+    "requirements": [
+        "A Logitech Litra Glow connected over USB (046D:C900)",
+        "Linux with hidraw access to the light (see udev/99-litra-glow.rules)"
+    ]
+}
